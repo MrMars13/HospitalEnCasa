@@ -17,10 +17,7 @@ namespace HospiEnCasa.App.Persistencia.Migrations
                     NumeroTelefono = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Genero = table.Column<int>(type: "int", nullable: false)
                 },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Personas", x => x.Id);
-                });
+                constraints: table => table.PrimaryKey("PK_Personas", x => x.Id));
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

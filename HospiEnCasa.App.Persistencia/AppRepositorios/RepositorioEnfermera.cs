@@ -6,7 +6,6 @@ namespace HospiEnCasa.App.Persistencia
 {
     public class RepositorioEnfermera : IRepositorioEnfermera
     {
-
         private readonly AppContext _appContext;
 
         public RepositorioEnfermera(AppContext appContext)
@@ -24,8 +23,8 @@ namespace HospiEnCasa.App.Persistencia
         void IRepositorioEnfermera.DeleteEnfermera(int idEnfermera)
         {
             var enfermeraEncontrado = _appContext.Enfermeras.FirstOrDefault(p => p.Id == idEnfermera);
-            if (enfermeraEncontrado == null) 
-                return; 
+            if (enfermeraEncontrado == null)
+                return;
             _appContext.Enfermeras.Remove(enfermeraEncontrado);
             _appContext.SaveChanges();
         }
@@ -51,8 +50,7 @@ namespace HospiEnCasa.App.Persistencia
                 enfermeraEncontrado.Genero = enfermera.Genero;
                 enfermeraEncontrado.TarjetaProfesional = enfermera.TarjetaProfesional;
                 enfermeraEncontrado.HorasLaborales = enfermera.HorasLaborales;
-                
-                _appContext.SaveChanges();             
+                _appContext.SaveChanges();
             }
             return enfermeraEncontrado;
         }

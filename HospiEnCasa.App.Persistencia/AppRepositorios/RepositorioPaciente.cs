@@ -106,6 +106,14 @@ namespace HospiEnCasa.App.Persistencia
         {
             return _appContext.Pacientes.FirstOrDefault(p => p.Id == idPaciente);
         }
+        IEnumerable<Paciente> IRepositorioPaciente.GetPacientesCorazon()
+        {
+            return _appContext.Pacientes.Where(p => p.SignosVitales.Any(s => TipoSigno.FrecuenciaCardica == s.Signo && s.Valor >= 90)).ToList();
+        }
+        IEnumerable<Paciente> IRepositorioPaciente.GetPacientesMasculinos()
+        {
+            return _appContext.Pacientes.Where(p => p.Genero == Genero.Masculino).ToList();
+        }
         Paciente IRepositorioPaciente.UpdatePaciente(Paciente paciente)
         {
             var pacienteEncontrado = _appContext.Pacientes.FirstOrDefault(p => p.Id == paciente.Id);

@@ -1,6 +1,7 @@
 ﻿using System;
 using HospiEnCasa.App.Dominio;
 using HospiEnCasa.App.Persistencia;
+using System.Collections.Generic;
 
 namespace HospiEnCasa.App.Consola
 {
@@ -32,6 +33,10 @@ namespace HospiEnCasa.App.Consola
             //AddMedico();
             //AddFamiliarDesignado();
             //AddHistoria();
+            //CreatePacienteConSignos();
+            //AsignarSignosPaciente(5);
+            //GetPacientesMasculinos();
+            GetPacientesCorazon();
         }
 
         private static void AsignarMedico()
@@ -58,6 +63,25 @@ namespace HospiEnCasa.App.Consola
             Console.WriteLine("Historia No. " + historia.Id);
         }
 
+        private static void AsignarSignosPaciente(int idPaciente)
+        {
+            var paciente = _repoPaciente.GetPaciente(idPaciente);
+            if(paciente != null)
+            {
+                if(paciente.SignosVitales != null)
+                {
+                    paciente.SignosVitales.Add(new SignoVital{FechaHora = new DateTime(2021,10,04,21,00,00), Valor = 90, Signo = TipoSigno.FrecuenciaCardica});
+                }
+                else 
+                {
+                   paciente.SignosVitales =  new List<SignoVital>{
+                       new SignoVital{FechaHora = new DateTime(2021,10,04,21,00,00), Valor = 90, Signo = TipoSigno.FrecuenciaCardica}
+                   };
+                }
+                _repoPaciente.UpdatePaciente(paciente);
+            }
+        }
+
         private static void CreatePaciente()
         {
             var paciente =
@@ -72,6 +96,28 @@ namespace HospiEnCasa.App.Consola
                     Latitud = -75.5229F,
                     Ciudad = "Manizales",
                     FechaNacimiento = new DateTime(1990, 04, 12)
+                };
+            _repoPaciente.AddPaciente(paciente);
+        }
+
+        private static void CreatePacienteConSignos()
+        {
+            var paciente = new Paciente
+                {
+                    Nombre = "Paula",
+                    Apellidos = "Patiño",
+                    NumeroTelefono = "301 5687",
+                    Genero = Genero.Neutro,
+                    Direccion = "Carrera 12 No. 84-10",
+                    Longitud = 5.07062F,
+                    Latitud = -75.5229F,
+                    Ciudad = "Cali",
+                    FechaNacimiento = new DateTime(1984, 04, 10),
+                    SignosVitales = new List<SignoVital>{
+                        new SignoVital{FechaHora = new DateTime(2021,10,04,18,00,00), Valor = 36, Signo = TipoSigno.TemperaturaCorporal},
+                        new SignoVital{FechaHora = new DateTime(2021,10,04,18,05,00), Valor = 95, Signo = TipoSigno.SaturacionOxigeno},
+                        new SignoVital{FechaHora = new DateTime(2021,10,04,18,10,00), Valor = 86, Signo = TipoSigno.FrecuenciaCardica}
+                    }
                 };
             _repoPaciente.AddPaciente(paciente);
         }
@@ -180,6 +226,24 @@ namespace HospiEnCasa.App.Consola
                     Entorno = "Entorno de pereza"
                 };
             _repoHistoria.AddHistoria(historia);
+        }
+
+        private static void GetPacientesMasculinos()
+        {
+            var pacientesM = _repoPaciente.GetPacientesMasculinos();
+            foreach (Paciente p in pacientesM)
+            {
+                Console.WriteLine(p.Nombre + " " + p.Apellidos);
+            }
+        }
+
+        private static void GetPacientesCorazon()
+        {
+            var pacientesH = _repoPaciente.GetPacientesCorazon();
+            foreach (Paciente p in pacientesH)
+            {
+                Console.WriteLine(p.Nombre + " " + p.Apellidos);
+            }
         }
     }
 }

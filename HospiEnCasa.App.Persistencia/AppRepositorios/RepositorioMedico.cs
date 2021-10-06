@@ -21,8 +21,8 @@ namespace HospiEnCasa.App.Persistencia
         void IRepositorioMedico.DeleteMedico(int idMedico)
         {
             var medicoEncontrado = _appContext.Medicos.FirstOrDefault(p => p.Id == idMedico);
-            if (medicoEncontrado == null) 
-                return; 
+            if (medicoEncontrado == null)
+                return;
             _appContext.Medicos.Remove(medicoEncontrado);
             _appContext.SaveChanges();
         }
@@ -49,8 +49,7 @@ namespace HospiEnCasa.App.Persistencia
                 medicoEncontrado.Especialidad = medico.Especialidad;
                 medicoEncontrado.Codigo = medico.Codigo;
                 medicoEncontrado.RegistroRethus = medico.RegistroRethus;
-                  
-                _appContext.SaveChanges();             
+                _appContext.SaveChanges();
             }
             return medicoEncontrado;
         }

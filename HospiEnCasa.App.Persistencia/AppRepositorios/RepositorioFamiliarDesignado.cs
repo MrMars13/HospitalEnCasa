@@ -12,7 +12,6 @@ namespace HospiEnCasa.App.Persistencia
             _appContext = appContext;
         }
 
-
         FamiliarDesignado IRepositorioFamiliarDesignado.AddFamiliarDesignado(FamiliarDesignado familiarDesignado)
         {
             var familiarDesignadoAdicionado = _appContext.FamiliaresDesignados.Add(familiarDesignado);
@@ -23,8 +22,8 @@ namespace HospiEnCasa.App.Persistencia
         void IRepositorioFamiliarDesignado.DeleteFamiliarDesignado(int idFamiliarDesignado)
         {
             var familiarDesignadoEncontrado = _appContext.FamiliaresDesignados.FirstOrDefault(p => p.Id == idFamiliarDesignado);
-            if (familiarDesignadoEncontrado == null) 
-                return; 
+            if (familiarDesignadoEncontrado == null)
+                return;
             _appContext.FamiliaresDesignados.Remove(familiarDesignadoEncontrado);
             _appContext.SaveChanges();
         }
@@ -50,8 +49,7 @@ namespace HospiEnCasa.App.Persistencia
                 familiarDesignadoEncontrado.Genero = familiarDesignado.Genero;
                 familiarDesignadoEncontrado.Parentesco = familiarDesignado.Parentesco;
                 familiarDesignadoEncontrado.Correo = familiarDesignado.Correo;
-                
-                _appContext.SaveChanges();             
+                _appContext.SaveChanges();
             }
             return familiarDesignadoEncontrado;
         }

@@ -45,7 +45,6 @@ namespace HospiEnCasa.App.Persistencia
                 signoVitalEncontrado.FechaHora = signoVital.FechaHora;
                 signoVitalEncontrado.Valor = signoVital.Valor;
                 signoVitalEncontrado.Signo = signoVital.Signo;
-                
                 _appContext.SaveChanges();
             }
             return signoVitalEncontrado;

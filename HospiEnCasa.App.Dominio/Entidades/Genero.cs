@@ -7,10 +7,9 @@ namespace HospiEnCasa.App.Dominio
     {
         Masculino,
         Femenino,
-        Bisexual,
-        Intersexual,
-        Pansexual,
-        Transexual
-
+        Transgenero,
+        Androgino,
+        Neutro,
+        Nobinario
     }
 }

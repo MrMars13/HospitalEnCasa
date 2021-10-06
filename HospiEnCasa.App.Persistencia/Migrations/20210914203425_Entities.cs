@@ -119,10 +119,7 @@ namespace HospiEnCasa.App.Persistencia.Migrations
                     Diagnostico = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Entorno = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Historias", x => x.Id);
-                });
+                constraints: table => table.PrimaryKey("PK_Historias", x => x.Id));
 
             migrationBuilder.CreateTable(
                 name: "SignosVitales",

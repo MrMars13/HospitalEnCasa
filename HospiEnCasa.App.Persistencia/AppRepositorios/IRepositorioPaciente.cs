@@ -14,5 +14,7 @@ namespace HospiEnCasa.App.Persistencia
         Enfermera AsignarEnfermera(int idPaciente, int idEnfermera);
         FamiliarDesignado AsignarFamiliarDesignado(int idPaciente, int idFamiliarDesignado);
         Historia AsignarHistoria(int idPaciente, int idHistoria);
+        IEnumerable<Paciente> GetPacientesMasculinos();
+        IEnumerable<Paciente> GetPacientesCorazon();
     }
 }

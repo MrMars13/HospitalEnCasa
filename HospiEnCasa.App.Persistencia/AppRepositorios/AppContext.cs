@@ -18,7 +18,6 @@ namespace HospiEnCasa.App.Persistencia
             {
                 optionsBuilder.UseSqlServer(@"Data Source=localhost\SQLEXPRESS; Initial Catalog = HospiEnCasaData; Integrated Security = True");
             }
-                   
         }
     }
 }
