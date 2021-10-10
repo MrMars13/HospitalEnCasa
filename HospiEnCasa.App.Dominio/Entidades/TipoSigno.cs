@@ -1,8 +1,6 @@
 namespace HospiEnCasa.App.Dominio
 {
-    /// <summary>
-    /// Lista de Signos vitales
-    /// </summary>
+    // Lista de signos Vitales
     public enum TipoSigno
     {
         TensionArterial,

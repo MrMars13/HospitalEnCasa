@@ -3,24 +3,16 @@ using System.Collections.Generic;
 
 namespace HospiEnCasa.App.Dominio
 {
-    /// <summary>Class <c>Historia</c>
-    /// Modela la Historia clínica relacionada cpon el cuidado en casa del Paciente
-    /// </summary>
+    // Modela la Historia clínica relacionada cpon el cuidado en casa del Paciente
     public class Historia
     {
         // Identificador único de la Historia
         public int Id { get; set; }
-        /// <summary>
-        /// Descripcion detallada del diagnostico del Paciente
-        /// </summary>
+        // Descripcion detallada del diagnostico del Paciente
         public string Diagnostico  { get; set; }
-         /// <summary>
-         /// Descripción de la casa y habitación del Paciente
-         /// </summary>
+        // Descripción de la casa y habitación del Paciente
         public string Entorno { get; set; }
-        /// <summary>
-        /// Referencia la lista de sugerencias registradas en la Historia del Paciente
-        /// </summary>
+        // Referencia la lista de sugerencias registradas en la Historia del Paciente
         public List<SugerenciaCuidado> Sugerencias { get; set; }
     }
 }

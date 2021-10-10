@@ -74,3 +74,4 @@ C:\Hospitalizacion\HospiEnCasa.App\HospiEnCasa.App.FrontEnd\obj\Debug\net5.0\Raz
 C:\Hospitalizacion\HospiEnCasa.App\HospiEnCasa.App.FrontEnd\obj\Debug\net5.0\Razor\Pages\Medicos\CreateMedico.cshtml.g.cs
 C:\Hospitalizacion\HospiEnCasa.App\HospiEnCasa.App.FrontEnd\obj\Debug\net5.0\Razor\Pages\Medicos\DetailMedico.cshtml.g.cs
 C:\Hospitalizacion\HospiEnCasa.App\HospiEnCasa.App.FrontEnd\obj\Debug\net5.0\Razor\Pages\Medicos\EditMedico.cshtml.g.cs
+C:\Hospitalizacion\HospiEnCasa.App\HospiEnCasa.App.FrontEnd\obj\Debug\net5.0\Razor\Pages\Medicos\RemoveMedico.cshtml.g.cs

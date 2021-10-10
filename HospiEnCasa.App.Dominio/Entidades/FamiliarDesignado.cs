@@ -1,8 +1,6 @@
 namespace HospiEnCasa.App.Dominio
 {
-    /// <summary>Class <c>FamiliarDesignado</c>
-    /// Modela al familiar asignado para cuidar al paciente
-    /// </summary>
+    // Modela al familiar asignado para cuidar al paciente
     public class FamiliarDesignado : Persona
     {
         public string Parentesco { get; set; }

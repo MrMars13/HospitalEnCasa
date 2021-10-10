@@ -15664,6 +15664,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.FrontEnd\\Pages\\Medicos\\RemoveMedico.cshtml",
+      "TargetPath": "Pages\\Medicos\\RemoveMedico.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.FrontEnd\\Pages\\Medicos\\EditMedico.cshtml",
       "TargetPath": "Pages\\Medicos\\EditMedico.cshtml",
       "FileKind": "mvc"

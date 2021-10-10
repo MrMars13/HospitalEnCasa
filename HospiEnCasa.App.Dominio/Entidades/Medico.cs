@@ -1,22 +1,14 @@
 
 namespace HospiEnCasa.App.Dominio
 {
-    /// <summary>Class <c>Medico</c>
-    /// Modela un Medico del equipo medico de apoyo
-    /// </summary>
+    // Modela un Medico del equipo medico de apoyo
     public class Medico : Persona
     {
-        /// <summary>
-        /// Nombre de la especialidad medica del Médico
-        /// </summary>
+        // Nombre de la especialidad medica del Médico
         public string Especialidad { get; set; }
-        /// <summary>
-        /// Código único del médico
-        /// </summary>
+        // Código único del médico
         public string Codigo { get; set; }
-         /// <summary>
-         /// Registro Unico Nacional del Talento Humano
-         /// </summary>
+        // Registro Unico Nacional del Talento Humano
         public string RegistroRethus { get; set; }
     }
 }

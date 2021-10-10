@@ -1,0 +1,11 @@
+﻿@page
+@model HospiEnCasa.App.FrontEnd.Pages.RemoveMedicoModel
+@{
+}
+<h1>Confirmación</h1>
+<p>Desea eliminar al médico @Model.Medico.Nombre @Model.Medico.Apellidos</p>
+<form method = "post" class="mt-3">
+    <input hidden asp-for="Medico.Id" />
+    <button type = "submit" class="btn btn-primary"> Si </button>
+    <a asp-page="./ListMedico" class="btn btn-primary"> No </a>
+</form>

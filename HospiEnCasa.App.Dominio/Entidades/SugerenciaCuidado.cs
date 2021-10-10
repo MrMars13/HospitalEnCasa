@@ -2,20 +2,14 @@ using System;
 
 namespace HospiEnCasa.App.Dominio
 {
-    /// <summary>Class <c>SugerenciaCuidado</c>
-    /// Modela las sugerencias de cuidado del Paciente
-    /// </summary>
+    // Modela las sugerencias de cuidado del Paciente
     public class SugerenciaCuidado
     {
         // Identificador único de cada SugerenciaCuidado
         public int Id { get; set; }
-        /// <summary>
-        /// Fecha y hora en que se escribe la sugerencia
-        /// </summary>
+        // Fecha y hora en que se escribe la sugerencia
         public DateTime FechaHora  { get; set; }
-         /// <summary>
-         /// Texto con la sugerencia
-         /// </summary>
+         // Texto con la sugerencia
         public string Descripcion {get;set;}
     }
 }

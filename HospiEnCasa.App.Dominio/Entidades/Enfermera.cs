@@ -1,17 +1,11 @@
 namespace HospiEnCasa.App.Dominio
 {
-    /// <summary>Class <c>Enfermera</c>
-    /// Modela una Persona del personal de enfermería del equipo medico de apoyo
-    /// </summary>
+    // Modela una Persona del personal de enfermería del equipo medico de apoyo
     public class Enfermera : Persona
     {
-        /// <summary>
-        /// Numero único de la tarjeta profesional
-        /// </summary>
+        // Numero único de la tarjeta profesional
         public string TarjetaProfesional { get; set; }
-        /// <summary>
-        /// Cantidad de horas laborales a la semana
-        /// </summary>
+        // Cantidad de horas laborales a la semana
         public int HorasLaborales { get; set; }
     }
 }

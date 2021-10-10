@@ -9,30 +9,22 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace HospiEnCasa.App.FrontEnd.Pages
 {
-    public class EditMedicoModel : PageModel
+    public class RemoveMedicoModel : PageModel
     {
         private readonly IRepositorioMedico repositorioMedico;
         public Medico Medico { get; set; }
-        public EditMedicoModel(IRepositorioMedico repositorioMedico)
+        public RemoveMedicoModel(IRepositorioMedico repositorioMedico)
         {
             this.repositorioMedico = repositorioMedico;
         }
-
         public void OnGet(int Id)
         {
             Medico = repositorioMedico.GetMedico(Id);
         }
         public IActionResult OnPost(Medico Medico)
         {
-            try
-            {
-                repositorioMedico.UpdateMedico(Medico);
-                return RedirectToPage("./ListMedico");
-            }
-            catch
-            {
-                return RedirectToPage("../Error");
-            }
+            repositorioMedico.DeleteMedico(Medico.Id);
+            return RedirectToPage("./ListMedico");
         }
     }
 }
