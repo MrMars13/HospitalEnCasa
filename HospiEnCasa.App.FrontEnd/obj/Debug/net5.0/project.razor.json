@@ -15624,13 +15624,58 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.FrontEnd\\Pages\\Pacientes\\ListPacientes.cshtml",
+      "TargetPath": "Pages\\Pacientes\\ListPacientes.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.FrontEnd\\Pages\\Pacientes\\EditPaciente.cshtml",
+      "TargetPath": "Pages\\Pacientes\\EditPaciente.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.FrontEnd\\Pages\\_ViewStart.cshtml",
       "TargetPath": "Pages\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.FrontEnd\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.FrontEnd\\Pages\\_ViewImports.cshtml",
       "TargetPath": "Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.FrontEnd\\Pages\\Pacientes\\DetailPaciente.cshtml",
+      "TargetPath": "Pages\\Pacientes\\DetailPaciente.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.FrontEnd\\Pages\\Pacientes\\Signos\\List.cshtml",
+      "TargetPath": "Pages\\Pacientes\\Signos\\List.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.FrontEnd\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.FrontEnd\\Pages\\Shared\\_LoginPartial.cshtml",
+      "TargetPath": "Pages\\Shared\\_LoginPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.FrontEnd\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.FrontEnd\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15659,8 +15704,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.FrontEnd\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.FrontEnd\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.FrontEnd\\Pages\\Medicos\\ListMedico.cshtml",
       "TargetPath": "Pages\\Medicos\\ListMedico.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.FrontEnd\\Pages\\Pacientes\\RemovePaciente.cshtml",
+      "TargetPath": "Pages\\Pacientes\\RemovePaciente.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15671,6 +15731,16 @@
     {
       "FilePath": "c:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.FrontEnd\\Pages\\Medicos\\EditMedico.cshtml",
       "TargetPath": "Pages\\Medicos\\EditMedico.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.FrontEnd\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.FrontEnd\\Pages\\Pacientes\\CreatePaciente.cshtml",
+      "TargetPath": "Pages\\Pacientes\\CreatePaciente.cshtml",
       "FileKind": "mvc"
     },
     {

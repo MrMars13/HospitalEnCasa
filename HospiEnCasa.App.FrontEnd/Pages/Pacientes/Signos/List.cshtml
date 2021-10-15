@@ -1,0 +1,22 @@
+﻿@page
+@model HospiEnCasa.App.FrontEnd.Pages.Pacientes.Signos.ListModel
+@{
+    int pacienteId = Model.Paciente.Id;
+}
+<h1> Listado de Signos Vitales </h1>
+<table class="table">
+    <tr>
+        <th scope="col">Tipo de Signo</th>
+        <th scope="col">Valor</th>
+        <th scope="col">Fecha y Hora</th>
+    </tr>
+    @foreach (var signo in Model.SignosPaciente)
+    {
+        <tr>
+            <td>@signo.Signo</td>
+            <td>@signo.Valor</td>
+            <td>@signo.FechaHora</td>
+        </tr>
+    }
+</table>
+<a class="btn btn-primary" asp-page="../DetailPaciente" asp-route-id="@pacienteId"> Regresar </a>

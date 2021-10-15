@@ -16,5 +16,6 @@ namespace HospiEnCasa.App.Persistencia
         Historia AsignarHistoria(int idPaciente, int idHistoria);
         IEnumerable<Paciente> GetPacientesMasculinos();
         IEnumerable<Paciente> GetPacientesCorazon();
+        IEnumerable<SignoVital> GetSignosPaciente(int idPaciente);
     }
 }

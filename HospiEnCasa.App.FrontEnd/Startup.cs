@@ -18,15 +18,16 @@ namespace HospiEnCasa.App.FrontEnd
         {
             Configuration = configuration;
         }
-
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddControllersWithViews();
             services.AddSingleton<IRepositorioMedico>(new RepositorioMedico(new Persistencia.AppContext()));
             services.AddSingleton<IRepositorioEnfermera>(new RepositorioEnfermera(new Persistencia.AppContext()));
+            services.AddSingleton<IRepositorioPaciente>(new RepositorioPaciente(new Persistencia.AppContext()));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,7 +51,13 @@ namespace HospiEnCasa.App.FrontEnd
 
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints => endpoints.MapRazorPages());
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller = Conference}/{action = Index}/{id?}");
+                endpoints.MapRazorPages();
+            });
         }
     }
 }

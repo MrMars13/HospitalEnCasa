@@ -1,0 +1,18 @@
+﻿@page
+@model HospiEnCasa.App.FrontEnd.Pages.DetailPacienteModel
+@{
+    int pacienteId = Model.Paciente.Id;
+}
+<h1>Detalle Paciente @Model.Paciente.Nombre @Model.Paciente.Apellidos</h1>
+<ul>
+    <li>Nombre: @Model.Paciente.Nombre</li>
+    <li>Apellidos: @Model.Paciente.Apellidos</li>
+    <li>Número de Telefono: @Model.Paciente.NumeroTelefono</li>
+    <li>Genero: @Model.Paciente.Genero</li>
+    <li>Dirección: @Model.Paciente.Direccion</li>
+    <li>Latitud: @Model.Paciente.Latitud</li>
+    <li>Longitud: @Model.Paciente.Longitud</li>
+    <li>Ciudad: @Model.Paciente.Ciudad</li>
+</ul>
+<a class="btn btn-primary" asp-page="./Signos/List" asp-route-pacienteId ="@pacienteId">Signos Vitales Paciente</a> <br>
+<a asp-page="./ListPacientes" class="btn-default"> Regresar a la lista de Pacientes </a>

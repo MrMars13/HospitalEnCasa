@@ -1,21 +1,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using HospiEnCasa.App.Dominio;
+using Microsoft.EntityFrameworkCore;
 
 namespace HospiEnCasa.App.Persistencia
 {
     public class RepositorioPaciente : IRepositorioPaciente
     {
-        /// <summary>
-        /// Referencia al contexto de Paciente
-        /// </summary>
+        // Referencia al contexto de Paciente
         private readonly AppContext _appContext;
-
-        /// <summary>
-        /// Método Constructor Utiliza
-        /// Inyección de dependencias para indicar el contexto a utilizar
-        /// </summary>
-        /// <param name="appContext"></param>
+        // Método Constructor Utiliza
+        // Inyección de dependencias para indicar el contexto a utilizar
         public RepositorioPaciente(AppContext appContext)
         {
             _appContext = appContext;
@@ -114,6 +109,13 @@ namespace HospiEnCasa.App.Persistencia
         {
             return _appContext.Pacientes.Where(p => p.Genero == Genero.Masculino).ToList();
         }
+
+        IEnumerable<SignoVital> IRepositorioPaciente.GetSignosPaciente(int idPaciente)
+        {
+            var paciente = _appContext.Pacientes.Where(s => s.Id == idPaciente).Include(s => s.SignosVitales).FirstOrDefault();
+            return paciente.SignosVitales;
+        }
+
         Paciente IRepositorioPaciente.UpdatePaciente(Paciente paciente)
         {
             var pacienteEncontrado = _appContext.Pacientes.FirstOrDefault(p => p.Id == paciente.Id);
