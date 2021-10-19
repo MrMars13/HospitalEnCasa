@@ -11,8 +11,6 @@
         <th scope="col">Número telefono</th>
         <th scope="col">Genero</th>
         <th scope="col">Dirección</th>
-        <th scope="col">Latitud</th>
-        <th scope="col">Longitud</th>
         <th scope="col">Ciudad</th>
         <th scope="col">Acciones</th>
     </tr>
@@ -24,8 +22,6 @@
             <td>@paciente.NumeroTelefono</td>
             <td>@paciente.Genero</td>
             <td>@paciente.Direccion</td>
-            <td>@paciente.Latitud</td>
-            <td>@paciente.Longitud</td>
             <td>@paciente.Ciudad</td>
             <td><a class="btn btn-primary table-btn" asp-page="./DetailPaciente" asp-route-id="@paciente.Id">Detalles</a>
                 <a class="btn btn-primary table-btn" asp-page="./EditPaciente" asp-route-id="@paciente.Id">Editar</a>

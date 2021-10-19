@@ -11,5 +11,6 @@ namespace HospiEnCasa.App.Persistencia
         void DeleteHistoria(int idhistoria);
         Historia GetHistoria(int idhistoria);
         SugerenciaCuidado AsignarSugerenciaCuidado(int idhistoria, int idsugerenciaCuidado);
+        IEnumerable<Historia> HistoriaPorPaciente(Paciente paciente);
     }
 }

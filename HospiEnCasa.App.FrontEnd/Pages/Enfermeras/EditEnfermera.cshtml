@@ -1,0 +1,38 @@
+﻿@page
+@model HospiEnCasa.App.FrontEnd.Pages.EditEnfermeraModel
+@using HospiEnCasa.App.Dominio;
+@{
+}
+<h1>Añadir enfermera/o</h1>
+<form method="post" class="mt-3">
+    <input hidden asp-for="Enfermera.Id" />
+    <div class="form-group row">
+        <label asp-for="Enfermera.Nombre" class="col-sm-2">Nombre</label>
+        <input asp-for="Enfermera.Nombre" class="form-control"  required>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Enfermera.Apellidos" class="col-sm-2">Apellidos</label>
+        <input asp-for="Enfermera.Apellidos" class="form-control"  required>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Enfermera.NumeroTelefono" class="col-sm-2">Número de teléfono</label>
+        <input asp-for="Enfermera.NumeroTelefono" class="form-control"  required>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Enfermera.Genero" class="col-sm-2">Genero</label>
+        <div class="col-sm-10">
+            <select asp-for="Enfermera.Genero" asp-items="Html.GetEnumSelectList<Genero>()"></select>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Enfermera.TarjetaProfesional" class="col-sm-2">Tarjeta Profesional</label>
+        <input asp-for="Enfermera.TarjetaProfesional" class="form-control"  required>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Enfermera.HorasLaborales" class="col-sm-2">Horas laborales</label>
+        <input asp-for="Enfermera.HorasLaborales" class="form-control"  required>
+        <div class="form-group row">
+            <button type="submit" class="btn btn-success"> Guardar </button>
+            <a asp-page="./ListEnfermeras" class="btn btn-primary"> Cancelar </a>
+        </div>
+</form>

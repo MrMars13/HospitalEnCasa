@@ -13,6 +13,10 @@
     <li>Latitud: @Model.Paciente.Latitud</li>
     <li>Longitud: @Model.Paciente.Longitud</li>
     <li>Ciudad: @Model.Paciente.Ciudad</li>
+    <li>Fecha de Nacimiento: @Model.Paciente.FechaNacimiento</li>
+    <li>Familiar Designado: @Model.Paciente.Familiar.Nombre @Model.Paciente.Familiar.Apellidos</li>
+    <li>Enfermera Asiganda: @Model.Paciente.Enfermera.Nombre @Model.Paciente.Enfermera.Apellidos</li>
+    <li>Medico Asigando: @Model.Paciente.Medico.Nombre @Model.Paciente.Medico.Apellidos</li>
 </ul>
 <a class="btn btn-primary" asp-page="./Signos/List" asp-route-pacienteId ="@pacienteId">Signos Vitales Paciente</a> <br>
 <a asp-page="./ListPacientes" class="btn-default"> Regresar a la lista de Pacientes </a>

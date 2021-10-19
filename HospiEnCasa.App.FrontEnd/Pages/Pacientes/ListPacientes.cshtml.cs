@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace HospiEnCasa.App.FrontEnd.Pages
 {
-    // NO olvidar colocar el repostorio en el STRARTUP!
+    // NO olvidar colocar el repositorio en el STRARTUP!
     public class ListPacientesModel : PageModel
     {
         private readonly IRepositorioPaciente repositorioPaciente;
@@ -20,7 +20,14 @@ namespace HospiEnCasa.App.FrontEnd.Pages
         }
         public void OnGet()
         {
-            Pacientes = repositorioPaciente.GetAllPacientes();
+            try
+            {
+                Pacientes = repositorioPaciente.GetAllPacientes();
+            }
+            catch
+            {
+                RedirectToPage("../Error");
+            }
         }
     }
 }

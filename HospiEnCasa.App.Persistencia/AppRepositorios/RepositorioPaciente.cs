@@ -99,7 +99,7 @@ namespace HospiEnCasa.App.Persistencia
         }
         Paciente IRepositorioPaciente.GetPaciente(int idPaciente)
         {
-            return _appContext.Pacientes.FirstOrDefault(p => p.Id == idPaciente);
+            return _appContext.Pacientes.Include("Medico").Include("Enfermera").Include("Familiar").FirstOrDefault(p => p.Id == idPaciente);
         }
         IEnumerable<Paciente> IRepositorioPaciente.GetPacientesCorazon()
         {

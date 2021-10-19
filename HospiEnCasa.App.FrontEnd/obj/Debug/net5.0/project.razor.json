@@ -15624,6 +15624,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.FrontEnd\\Pages\\Enfermeras\\CreateEnfermera.cshtml",
+      "TargetPath": "Pages\\Enfermeras\\CreateEnfermera.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.FrontEnd\\Pages\\Pacientes\\ListPacientes.cshtml",
       "TargetPath": "Pages\\Pacientes\\ListPacientes.cshtml",
       "FileKind": "mvc"
@@ -15674,6 +15679,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.FrontEnd\\Pages\\Enfermeras\\EditEnfermera.cshtml",
+      "TargetPath": "Pages\\Enfermeras\\EditEnfermera.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.FrontEnd\\Pages\\Enfermeras\\RemoveEnfermera.cshtml",
+      "TargetPath": "Pages\\Enfermeras\\RemoveEnfermera.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.FrontEnd\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -15686,6 +15701,11 @@
     {
       "FilePath": "c:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.FrontEnd\\Pages\\Privacy.cshtml",
       "TargetPath": "Pages\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.FrontEnd\\Pages\\Enfermeras\\DetailEnfermera.cshtml",
+      "TargetPath": "Pages\\Enfermeras\\DetailEnfermera.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15706,6 +15726,11 @@
     {
       "FilePath": "c:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.FrontEnd\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Hospitalizacion\\HospiEnCasa.App\\HospiEnCasa.App.FrontEnd\\Pages\\Enfermeras\\ListEnfermeras.cshtml",
+      "TargetPath": "Pages\\Enfermeras\\ListEnfermeras.cshtml",
       "FileKind": "mvc"
     },
     {

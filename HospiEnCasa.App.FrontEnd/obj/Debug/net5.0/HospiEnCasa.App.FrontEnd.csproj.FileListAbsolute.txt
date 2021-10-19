@@ -177,3 +177,8 @@ C:\Hospitalizacion\HospiEnCasa.App\HospiEnCasa.App.FrontEnd\obj\Debug\net5.0\Raz
 C:\Hospitalizacion\HospiEnCasa.App\HospiEnCasa.App.FrontEnd\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 C:\Hospitalizacion\HospiEnCasa.App\HospiEnCasa.App.FrontEnd\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 C:\Hospitalizacion\HospiEnCasa.App\HospiEnCasa.App.FrontEnd\obj\Debug\net5.0\Razor\Pages\Shared\_LoginPartial.cshtml.g.cs
+C:\Hospitalizacion\HospiEnCasa.App\HospiEnCasa.App.FrontEnd\obj\Debug\net5.0\Razor\Pages\Enfermeras\CreateEnfermera.cshtml.g.cs
+C:\Hospitalizacion\HospiEnCasa.App\HospiEnCasa.App.FrontEnd\obj\Debug\net5.0\Razor\Pages\Enfermeras\DetailEnfermera.cshtml.g.cs
+C:\Hospitalizacion\HospiEnCasa.App\HospiEnCasa.App.FrontEnd\obj\Debug\net5.0\Razor\Pages\Enfermeras\EditEnfermera.cshtml.g.cs
+C:\Hospitalizacion\HospiEnCasa.App\HospiEnCasa.App.FrontEnd\obj\Debug\net5.0\Razor\Pages\Enfermeras\ListEnfermeras.cshtml.g.cs
+C:\Hospitalizacion\HospiEnCasa.App\HospiEnCasa.App.FrontEnd\obj\Debug\net5.0\Razor\Pages\Enfermeras\RemoveEnfermera.cshtml.g.cs

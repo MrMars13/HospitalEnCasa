@@ -23,8 +23,15 @@ namespace HospiEnCasa.App.FrontEnd.Pages
         }
         public IActionResult OnPost(Medico Medico)
         {
-            repositorioMedico.DeleteMedico(Medico.Id);
-            return RedirectToPage("./ListMedico");
+            try
+            {
+                repositorioMedico.DeleteMedico(Medico.Id);
+                return RedirectToPage("./ListMedico");
+            }
+            catch
+            {
+                return RedirectToPage("../Error");
+            }
         }
     }
 }

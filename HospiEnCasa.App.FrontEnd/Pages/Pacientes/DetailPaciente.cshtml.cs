@@ -20,7 +20,14 @@ namespace HospiEnCasa.App.FrontEnd.Pages
 
         public void OnGet(int Id)
         {
-            Paciente = repositorioPaciente.GetPaciente(Id);
+            try
+            {
+                Paciente = repositorioPaciente.GetPaciente(Id);
+            }
+            catch
+            {
+                RedirectToPage("../Error");
+            }
         }
     }
 }
